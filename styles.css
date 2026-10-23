@@ -40,7 +40,7 @@ img {
 
 main {
   display: flex;
-  height: 100vh; /* odjac wielkosc headera */
+  height: calc(100vh - 180px);
 }
 
 input {
@@ -93,7 +93,6 @@ article,
 article img {
   width: 100px;
   height: auto;
-  /* padding: 10px; */
 }
 
 .sidepart-article {
@@ -101,8 +100,7 @@ article img {
 }
 
 .side-picture {
-  width: 120px;
-  height: auto;
+  width: 180px;
 }
 
 .red {
@@ -119,19 +117,25 @@ article img {
 }
 
 #navbar {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   padding: 15px 20px;
   border-bottom: 3px double black;
 }
 
 #sidepart {
   flex: 10 1 0;
+  border-left: 1px solid lightgray;
+  margin: 0 15px;
 }
 
 #article-grid,
-#side-pictures-grid {
+.side-pictures-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
+}
+
+.side-pictures-grid {
+  gap: 4px;
 }
 
 #logo {
@@ -173,8 +177,9 @@ article img {
   padding-bottom: 10px;
 }
 
+h2 + p,
 #top-story p,
-h2 + p {
+.side-pictures-grid + p {
   padding: 5px 0;
   color: gray;
 }
@@ -188,7 +193,8 @@ h2 + p {
   align-self: flex-start;
 }
 
-#top-story img + p {
+#top-story img + p,
+.side-pictures-grid + p {
   font-size: 9px;
   text-align: end;
 }
@@ -201,4 +207,17 @@ h2 + p {
 #article-grid article:nth-child(even) {
   border-left: 1px solid lightgray;
   padding: 10px 0 15px 10px;
+}
+
+#sidepart > * {
+  margin: 0 15px;
+}
+
+#sidepart > div {
+  padding: 10px 0;
+  border-top: 1px solid lightgray;
+}
+
+.sidepart-article > * {
+  margin-bottom: 15px;
 }
