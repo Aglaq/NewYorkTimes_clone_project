@@ -37,8 +37,21 @@ main {
   height: 100vh;
 }
 
-.searchbar {
-  background-color: blue;
+.icon {
+  width: 50px;
+  height: auto;
+}
+
+.searchbar,
+.searchbar ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.searchbar ul li {
+  text-decoration: none;
 }
 
 .logobar {
