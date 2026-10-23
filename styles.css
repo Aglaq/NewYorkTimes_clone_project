@@ -29,7 +29,7 @@ h6 {
 
 body {
   font-family: "Helvetica", "Arial", sans-serif;
-  font-size: 12px;
+  font-size: 11px;
   box-sizing: border-box;
   margin: 0 220px;
 }
@@ -54,10 +54,11 @@ input {
 }
 
 button {
+  font-size: 11px;
   color: white;
   background: rgba(21, 134, 143, 0.75);
   padding: 8px 12px;
-  margin: 5px 10px;
+  margin: 5px 8px;
   border: 0 solid;
   border-radius: 5px;
 }
@@ -95,6 +96,10 @@ article img {
   height: auto;
 }
 
+.red {
+  color: red;
+}
+
 #headbar li {
   text-decoration: none;
 }
@@ -114,10 +119,27 @@ article img {
 }
 
 #logo {
-  width: 200px;
+  width: 500px;
   height: auto;
 }
 
 #language-list {
   width: 400px;
+}
+
+.market,
+#language-list + div {
+  display: flex;
+  justify-content: end;
+}
+
+#logobar p {
+  margin: 5px;
+  font-size: 13px;
+}
+
+#logobar > div,
+#searchbar,
+#language-list + div {
+  flex: 1 1 0;
 }
