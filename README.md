@@ -5,4 +5,4 @@ All pictures taken from:
 https://www.svgrepo.com/
 https://unsplash.com/
 
-Clone of NY Times homepage (https://www.nytimes.com)
+Clone of NY Times homepage, screenshot from 23.10.2026 (https://www.nytimes.com)
