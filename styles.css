@@ -49,7 +49,8 @@ main {
 #searchbar,
 #searchbar ul,
 #logobar,
-.market {
+.market,
+#navbar ul {
   list-style-type: none;
   display: flex;
   justify-content: space-between;
