@@ -29,6 +29,7 @@ h6 {
 
 body {
   font-family: "Helvetica", "Arial", sans-serif;
+  font-size: 12px;
   box-sizing: border-box;
   margin: 0 220px;
 }
@@ -42,6 +43,25 @@ main {
   height: 100vh; /* odjac wielkosc headera */
 }
 
+input {
+  float: left;
+  padding: 6px;
+  margin: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 17px;
+  width: 90%;
+}
+
+button {
+  color: white;
+  background: rgba(21, 134, 143, 0.75);
+  padding: 8px 12px;
+  margin: 5px 10px;
+  border: 0 solid;
+  border-radius: 5px;
+}
+
 .icon {
   width: 50px;
   height: auto;
@@ -51,9 +71,10 @@ article,
 #headbar,
 #headbar ul,
 #logobar,
-.market,
 #navbar ul,
-#top-story {
+#top-story,
+#searchbar,
+.market {
   list-style-type: none;
   display: flex;
   justify-content: space-between;
@@ -95,4 +116,8 @@ article img {
 #logo {
   width: 200px;
   height: auto;
+}
+
+#language-list {
+  width: 400px;
 }
