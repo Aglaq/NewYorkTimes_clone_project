@@ -29,7 +29,7 @@ h6 {
 
 body {
   font-family: "Helvetica", "Arial", sans-serif;
-  font-size: 11px;
+  font-size: 13px;
   box-sizing: border-box;
   margin: 0 220px;
 }
@@ -63,6 +63,14 @@ button {
   border-radius: 5px;
 }
 
+h1 {
+  font-size: 24px;
+}
+
+h2 {
+  font-size: 18px;
+}
+
 .icon {
   width: 50px;
   height: auto;
@@ -85,6 +93,7 @@ article,
 article img {
   width: 100px;
   height: auto;
+  /* padding: 10px; */
 }
 
 .sidepart-article {
@@ -106,10 +115,10 @@ article img {
 
 #mainpart {
   flex: 22 1 0;
+  border: 1px solid black;
 }
 
 #navbar {
-  font-size: 13px;
   margin-bottom: 10px;
   padding: 15px 20px;
   border-bottom: 3px double black;
@@ -142,11 +151,54 @@ article img {
 
 #logobar p {
   margin: 5px;
-  font-size: 13px;
 }
 
 #logobar > div,
 #searchbar,
 #language-list + div {
   flex: 1 1 0;
+}
+
+#mainpart > div,
+#mainpart > p {
+  margin: 20px;
+}
+
+#mainpart > p {
+  text-align: center;
+}
+
+#top-story {
+  border-bottom: 1px solid black;
+  padding-bottom: 10px;
+}
+
+#top-story p,
+h2 + p {
+  padding: 5px 0;
+  color: gray;
+}
+
+#top-story img {
+  width: 1400px;
+}
+
+#top-story-text {
+  padding-right: 30px;
+  align-self: flex-start;
+}
+
+#top-story img + p {
+  font-size: 9px;
+  text-align: end;
+}
+
+#article-grid article {
+  border-bottom: 1px solid lightgray;
+  padding: 10px 10px 15px 0;
+}
+
+#article-grid article:nth-child(even) {
+  border-left: 1px solid lightgray;
+  padding: 10px 0 15px 10px;
 }
