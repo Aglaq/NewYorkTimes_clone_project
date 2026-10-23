@@ -30,6 +30,7 @@ h6 {
 body {
   font-family: "Helvetica", "Arial", sans-serif;
   box-sizing: border-box;
+  margin: 0 220px;
 }
 
 img {
@@ -46,37 +47,35 @@ main {
   height: auto;
 }
 
+article,
 #searchbar,
 #searchbar ul,
 #logobar,
 .market,
-#navbar ul {
+#navbar ul,
+#top-story {
   list-style-type: none;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.searchbar ul li {
+#searchbar li {
   text-decoration: none;
 }
 
-.logobar {
-  background-color: green;
-}
-
-.navbar {
-  background-color: red;
-}
-
-.mainpart {
-  background-color: yellow;
-  flex-grow: 1;
+#mainpart {
+  flex: 22 1 0;
 }
 
 .sidepart {
   background-color: pink;
-  width: 200px;
+  flex: 10 1 0;
+}
+
+#article-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 #logo {
