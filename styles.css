@@ -32,6 +32,10 @@ body {
   box-sizing: border-box;
 }
 
+img {
+  max-width: 100%;
+}
+
 main {
   display: flex;
   height: 100vh;
@@ -42,8 +46,10 @@ main {
   height: auto;
 }
 
-.searchbar,
-.searchbar ul {
+#searchbar,
+#searchbar ul,
+#logobar,
+.market {
   list-style-type: none;
   display: flex;
   justify-content: space-between;
@@ -70,4 +76,9 @@ main {
 .sidepart {
   background-color: pink;
   width: 200px;
+}
+
+#logo {
+  width: 200px;
+  height: auto;
 }
