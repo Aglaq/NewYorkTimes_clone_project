@@ -39,7 +39,7 @@ img {
 
 main {
   display: flex;
-  height: 100vh;
+  height: 100vh; /* odjac wielkosc headera */
 }
 
 .icon {
@@ -48,8 +48,8 @@ main {
 }
 
 article,
-#searchbar,
-#searchbar ul,
+#headbar,
+#headbar ul,
 #logobar,
 .market,
 #navbar ul,
@@ -60,7 +60,21 @@ article,
   align-items: center;
 }
 
-#searchbar li {
+article img {
+  width: 100px;
+  height: auto;
+}
+
+.sidepart-article {
+  display: block;
+}
+
+.side-picture {
+  width: 120px;
+  height: auto;
+}
+
+#headbar li {
   text-decoration: none;
 }
 
@@ -68,12 +82,12 @@ article,
   flex: 22 1 0;
 }
 
-.sidepart {
-  background-color: pink;
+#sidepart {
   flex: 10 1 0;
 }
 
-#article-grid {
+#article-grid,
+#side-pictures-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
